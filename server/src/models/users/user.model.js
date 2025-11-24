@@ -11,8 +11,27 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         unique: true,
+        trim: true,
+        loswercase: true,
+        validate: {
+            validator :(value) => /\S+@\S+\.\S+/.test(value),
+            message: "Invalid email format"
+        }
+    },
+    password:{
+        type: String,
+        required: true,
+        minlength:6
+    },
+    role:{
+        type: String,
+        enum: ['user','admin'],
+        default : "user"
     }
-})
+},
+
+{timestamps: true}
+)
 
 
 const User = mongoose.model("User", userSchema);
