@@ -19,3 +19,11 @@
 - Based on a token Access the  All users routes
 - Implemented validation from mongoose and Also in the controller 
 - Also first Read doces and also read some article then after all are done then use Chatgpt to improve the Code  and Also for Learning puropse. 
+
+
+# Day 3 Progress
+
+-  Create New Project of React and Also create a lading page with the help of https://claude.ai/
+-  Add new SignUp form and also user can Signup with form is woking fine 
+-  Also look some documentation Read React-Hooks Form and also the matrial Ui 
+-  Read About Routing and Create Routes also Client and Server can communcation
